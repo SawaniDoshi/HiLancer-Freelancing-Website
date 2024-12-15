@@ -1,0 +1,163 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  width: 90vw; /* Makes navbar span full width */
+  height: 8vh;
+  z-index: 1; /* Ensures navbar is visible on top */
+
+  top: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+.navbar .logo {
+  height: 50px;
+}
+
+.nav-options {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-options li {
+  position: relative;
+}
+
+.nav-options a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-options a:hover {
+  color: #ddd;
+}
+
+/* Hero Section Styles */
+/* Adjusted Form Container */
+.form-container {
+  background: rgb(227, 225, 225);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 80vw; /* Ensure it resizes on small screens */
+  margin-top: 200px; /* Add space between screen and form */
+  transition: transform 0.3s; /* Hover effect */
+}
+
+/* Centering the Form Section */
+.hero {
+  background-color: #f4f4f4;
+  padding: 100px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* Full screen minus navbar height */
+  margin-top: 10vh; /* Prevent overlap with fixed navbar */
+  width: 100vw;
+}
+
+
+.form-container h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-container:hover {
+  transform: scale(1.02);
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+}
+
+/* Center Content Horizontally */
+.jobs-list,
+.applied-jobs {
+ 
+  width:80vw; /* Limit width */
+  margin: 20px auto; /* Center the section */
+  padding: 20px;
+  background: #dfdfdf;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Form Buttons */
+.form-container button {
+  display: inline-block;
+  width: 100%; /* Full width to align with input fields */
+  margin-top: 20px; /* Add space above the button */
+  padding: 10px; /* Add padding for better click area */
+  font-size: 16px; /* Make text consistent */
+  color: #fff;
+  background-color: #007bff; /* Primary button color */
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+/* Align Buttons Consistently */
+.job-item {
+  text-align: left; /* Align content to the left */
+  padding: 15px;
+  margin-bottom: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  position: relative; /* Relative positioning for contained layout */
+}
+
+.job-item h3 {
+  margin-top: 0;
+}
+
+.job-item p {
+  margin: 5px 0;
+}
+
+.job-item .btn {
+  margin-right: 10px; /* Space between buttons */
+}
+
+/* Flexbox for Better Layout */
+.job-item-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-top: 10px;
+}
+
+.jobs-list .job-item {
+  margin-bottom: 20px; /* Space between job items */
+}
+
+.jobs-list {
+  width: 80vw;
+  margin: 20px auto;
+  padding: 20px;
+  background: #dfdfdf;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: left; /* Left align content */
+}
+

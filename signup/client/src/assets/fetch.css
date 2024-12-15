@@ -1,0 +1,77 @@
+.machine{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    -ms-grid-layer: 16px;
+    /* height: auto; */
+    top: 15%;
+    bottom: 0%;
+position: absolute;
+/* background-color: black; */
+}
+
+
+
+/* Card.css */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 16px;
+  width: 300px; /* Fixed width for all cards */
+  height: 450px; /* Fixed height for all cards */
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: space-between; /* Space out content evenly */
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Darker text color for better readability */
+  background-color: #fff; /* White background for clean look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+  margin-bottom: 50px;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow depth on hover */
+}
+
+.card img {
+  width: 100%; /* Ensure image takes full width */
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow to image */
+}
+
+.card h3 {
+  font-size: 20px; /* Adjust font size for title */
+  font-weight: bold;
+  margin: 8px 0; /* Spacing above and below title */
+  color: #333; /* Ensure strong visibility */
+}
+
+.card p {
+  font-size: 14px; /* Adjust font size for description */
+  margin: 8px 0; /* Spacing above and below description */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+  white-space: nowrap; /* Prevent text from wrapping */
+  color: #666; /* Softer color for description text */
+}
+
+/* Optional: Channel name styling */
+.channel-name {
+  font-style: italic;
+  color: #888; /* Softer gray for channel name */
+  margin-bottom: 8px;
+}
+
+/* Optional: Add animation effect for a more dynamic look */
+.card:hover img {
+  filter: brightness(1.1); /* Slightly brighten image on hover */
+}
+

@@ -1,0 +1,301 @@
+/* CSS Variables for easier color and spacing management */
+:root {
+    --primary-color: hsl(211, 74%, 17%);
+    --secondary-color: #003d7a;
+    --text-color: #333;
+    --white-color: #fff;
+    --gray-color: #ccc;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --spacing: 1rem;
+    --border-radius: 5px;
+    --transition-speed: 0.3s;
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: var(--spacing);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--spacing);
+}
+
+.logo-title {
+    margin: 0;
+    font-size: 1.75rem; /* Use rem for scalable font sizes */
+}
+
+.main-nav {
+    display: flex;
+    gap: var(--spacing);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: var(--spacing);
+}
+
+.nav-link {
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed);
+}
+
+.nav-link:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Dropdown Menu */
+/* Dropdown Menu */
+.nav-dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Makes sure it is displayed right below the Account link */
+    left: 0;
+    background-color: hsl(211, 74%, 17%);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000; /* Ensures the dropdown stays on top of other elements */
+  }
+  
+  .dropdown-item {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .dropdown-link {
+    padding: 10px 15px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .dropdown-link:hover {
+    background-color: #003d7a;
+  }
+  
+  .nav-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+
+/* Hero Section */
+.hero-section {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.hero-title {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing);
+    flex-wrap: wrap;
+}
+
+.search-input {
+    width: 60%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+.search-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+.search-button:hover {
+    background-color: #e2e6e9;
+}
+
+/* Job Listings */
+.job-listings-section {
+    padding: var(--spacing);
+}
+
+.job-card {
+    background-color: var(--white-color);
+    padding: var(--spacing);
+    margin-bottom: var(--spacing);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition-speed);
+    margin-left: 50px;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.job-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+}
+
+.job-details {
+    margin-bottom: 0.75rem;
+}
+
+.apply-btn {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+.apply-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    background-color: #39516b;
+    color: var(--white-color);
+    text-align: center;
+    padding: var(--spacing);
+}
+
+/* Live Chat */
+.live-chat-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    background: var(--white-color);
+    border: 1px solid var(--gray-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing);
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.chat-body {
+    padding: var(--spacing);
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.chat-footer {
+    display: flex;
+    padding: var(--spacing);
+    gap: var(--spacing);
+}
+
+.chat-input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid var(--gray-color);
+    border-radius: var(--border-radius);
+}
+
+.chat-send-btn {
+    background: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-input {
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .logo-title {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Job Listings */
+.job-listings-section {
+    padding: var(--spacing);
+    display: flex; /* Enable flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: var(--spacing); /* Add gap between job cards */
+}
+
+.job-card {
+    background-color: var(--white-color);
+    padding: var(--spacing);
+    margin-bottom: var(--spacing);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition-speed);
+    flex: 1 1 calc(50% - var(--spacing)); /* Set flex basis to 50% minus gap */
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Optional: For smaller screens, adjust the card width */
+@media (max-width: 768px) {
+    .job-card {
+        flex: 1 1 100%; /* Stack cards on smaller screens */
+    }
+}
